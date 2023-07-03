@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +40,153 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body,html{
+  width: 100%;
+  height: 100%;
+}
+
+
+h2{
+  text-align: center;
+  margin: 3vh 0;
+}
+
+.content-perfil{
+  padding: 1.5vh;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0px 0px 5px 1px black;
+  border-radius: 3vh;
+}
+.foto-perfil{
+  display: block;
+  margin: auto;
+  border-radius:50%;
+  width: 100px;
+  height: 100px;
+}
+
+.perfiles{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vh;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  margin: 0 0.5vh;
+}
+
+.productos{
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vh;
+  text-align: center;
+}
+
+.foto-product{
+  width: 90%;
+  height: 150px;
+  border: none;
+  border-radius: 10px;
+}
+.productos p:nth-child(3){
+  width: 50%;
+  margin:auto
+}
+
+.content-products{
+  padding: 0.5vh;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 0px 5px 1px rgba(1, 40, 84, 0.45);
+  border-radius: 3vh;
+}
+.testimonios{
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vh;
+  text-align: center;
+}
+
+.content-testimonio{
+  padding: 0.5vh 1vh;
+  width: fit-content;
+  text-align: center;
+  box-shadow: 0px 0px 5px 1px rgba(185, 4, 170, 0.45);
+  border-radius: 3vh;
+}
+
+.content-testimonio .foto-perfil{
+  width: 75px;
+  height: 75px;
+  right: 10px;
+}
+
+.grupo{
+  display: flex;
+}
+
+.contacto{
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.contacto img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 5px green);
+  margin-bottom: 10vh;  
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  gap: 3vh;
+}
+
+.mascotas{
+  display: flex; 
+  gap: 1vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mascota-card{
+  width: 250px;
+}
+
+
+h1{
+  text-align: center;
+}
+.titulo-calculo{
+  text-align: left;
+}
+.resultado{
+  font-size: larger;
+  font-weight: 700;
+  cursor: pointer;
+}
+.resultado span{
+  color: green;
+}
+
+.formulario{
+  width: 50%;
+  height: fit-content;
+  box-shadow: 0px 0px 5px 1px rgba(3, 108, 245, 0.555);
+  border-radius: 20px;
+  padding: 2.5vh;
+  margin: auto;
 }
