@@ -28,6 +28,9 @@ function NavBar() {
         <li>
           <Link to="/calc">Mascota Tabla</Link>
         </li>
+        <li>
+          <Link to="/gal">Galeria</Link>
+        </li>
       </ul>
     </nav>
   );

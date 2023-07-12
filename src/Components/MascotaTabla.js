@@ -1,39 +1,70 @@
 import NavBar from "./NavBar";
 import {useState} from 'react'
 function MascotaTabla(){
-    const [animal,setAnimal]=useState('')
-    const [cantidad,setCantidad]=useState('-')
+    const [animal, setAnimal]=useState('')
+    const [cantidad, setCantidad]=useState('-')
     const [alimento, setAlimento]=useState('-')
-    const [peso,setPeso]=useState('-')
+    const [peso, setPeso]=useState('-')
+
+    const tablaConversion={
+        perro:{
+            nutrecan:{
+                0:"",
+                5:"",
+                10:"",
+                20:"",
+                30:"",
+                40:""
+            },
+            dogchow:{
+                0:"",
+                5:"",
+                10:"",
+                15:"",
+                20:"",
+                30:""
+            }
+        },
+        gato:{
+            agility:{
+                0:"",
+                3:"",
+                5:"",
+                7:"",
+                10:"" 
+            }
+        }
+    }
+
     function Calcular(){
         let total=''
         if(animal=='perro'){
             if(alimento=="nutrecan"){
                 if(peso>40){
                     total="500+"
-                }else if(peso>30){
+                } else if(peso>30){
                     total="400-500"
-                }else if(peso>20){
+                } else if(peso>20){
                     total="300-400"
-                }else if(peso>10){
+                } else if(peso>10){
                     total="200-300"
-                }else if(peso>5){
+                } else if(peso>5){
                     total="100-200"
-                }else{
+                } else{
                     total="50-100"
                 }
             }else if(alimento=="dogchow"){
                 if(peso>30){
                     total="350+"
-                }else if(peso>20){
+                } else if(peso>20){
                     total="250-350"
-                }else if(peso>15){
+                } else if(peso>15){
                     total="200-250"
-                }else if(peso>10){
+                } else if(peso>10){
                     total="150-200"
-                }else if(peso>5){
+                } else if(peso>5){
                     total="80-150"
-                }else{
+                } else{
                     total="40-80"
                 }
             }
@@ -41,13 +72,13 @@ function MascotaTabla(){
             if(alimento=="agiliti"){
                 if(peso>10){
                     total="150+"
-                }else if(peso>7){
+                } else if(peso>7){
                     total="110-150"
-                }else if(peso>5){
+                } else if(peso>5){
                     total="80-110"
-                }else if(peso>3){
+                } else if(peso>3){
                     total="50-80"
-                }else{
+                } else{
                     total="30-50"
                 }
         }

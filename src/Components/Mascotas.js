@@ -16,7 +16,7 @@ function Mascotas(){
           <div className='content mascotas'>
           {
           mascotas.map(mascota=> <Pet 
-            key={mascota.id} 
+            key={mascota.id} //Identificar a cada elemento en forma única
             mascota={mascota}
             setComidaCalculada={setComidaCalculada} //se envia a cada instancia como una prop llamada setComidaCalculada
             />)
